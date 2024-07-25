@@ -1,0 +1,164 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100%;
+    width: 100%;
+    
+}
+a{
+    text-decoration: none;
+}
+.containar{
+    max-width: 75vw;
+    padding: 2rem 1rem;
+     margin: 0 auto;
+    /* background-: rgb(43, 79, 170); */
+}
+
+.header_containar{
+    margin-bottom: 2.8rem;
+    
+}
+.header_title{
+    margin-bottom: 1rem;
+    font-size: 1.7rem;
+    line-height: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.header_desc{
+    max-width: 700px;
+    text-align: center;
+    color: rgb(27, 17, 17);
+    margin: 0 auto;
+}
+
+
+.main_containar{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1 ,1fr);
+    
+}
+@media (min-width:650px){
+    .main_containar{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width:1080px){
+    .main_containar{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (min-width:1340px){
+    .main_containar{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+
+.card_containar{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(200, 188, 188);
+    border-radius: 5px;
+    width: 16rem;
+    overflow: hidden;
+    /* box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;   */
+}
+.card_image_containar{
+    position: relative;
+    overflow: hidden;
+    height: 12rem;
+      /*width: 12rem; */
+    /* height: 200px;
+    width: 220px; */
+}
+.card_imagr{
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  
+}
+.card_image{
+    height: 100%;
+    width: 100%;
+} 
+
+
+.card_title_containar{
+    display: flex;
+    flex-direction: column;
+    /* margin: 1.5rem; */
+    padding: 1.5rem;
+}
+
+.card_containar:hover .card_image{
+    transform: scale(1.1);
+    transition-duration: 200ms;
+}
+.card_title{
+    font-size: 1rem;
+    font-weight: 600;
+    color: black;
+    line-height: 1.5rem;
+    margin-bottom: 0.2rem;
+}
+.card_title_anchore:hover .card_title{
+    color: rgb(69, 69, 243);
+}
+.card_desc{
+    color: rgb(57, 45, 45);
+    font-size: 1rem;
+}
+ .card_footer_containar{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0.6rem;
+
+}
+.author_containar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.3rem;
+
+}
+.author_avatar_containar{
+    height:20px;
+    width: 20px;
+    overflow: hidden;
+    border: 1px solid rgb(97, 91, 91);
+    border-radius: 50%;
+    background-color: rgb(140, 124, 124);
+}
+.author_avatar{
+    height: 100%;
+    width: 100%;
+}
+
+.author_info_containar{
+    display: flex;
+    flex-direction: column;
+}
+.author_name{
+    color: blue;
+}
+.author_date{
+    color: rgb(39, 30, 30);
+}
+
+.card_tag_containar{
+    font-size: 0.9rem;
+    border: 1px solid rgb(121, 105, 105);
+    line-height: 1.3rem;
+    border-radius: 2px;
+    padding: 0.25rem 0.5rem;
+}
